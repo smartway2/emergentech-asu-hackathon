@@ -10,6 +10,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <script src="http://cdn.ckeditor.com/4.6.1/standard/ckeditor.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 </head>
 
 <body>
@@ -67,7 +68,7 @@
     <section id="breadcrumb">
         <div class="container">
             <ol class="breadcrumb">
-                <li class="active">Dashboard</li>
+                <li class="active">Portal</li>
             </ol>
         </div>
     </section>
@@ -80,22 +81,22 @@
                         <a href="index.html" class="list-group-item active main-color-bg">
                             <span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Dashboard
                         </a>
-                        <a href="pages.html" class="list-group-item"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Patients <span class="badge">43</span></a>
-                        <a href="posts.html" class="list-group-item"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Notifications <span class="badge">33</span></a>
-                        <a href="users.html" class="list-group-item"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Messages <span class="badge">203</span></a>
+                        <a href="pages.html" class="list-group-item"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Visitors <span class="badge">43</span></a>
+                        <a href="posts.html" class="list-group-item"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Notifications <span class="badge">7</span></a>
+                        <a href="users.html" class="list-group-item"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Messages <span class="badge">27</span></a>
                     </div>
 
                     <div class="well">
                         <h4>Patients Seen</h4>
                         <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-                                60%
+                            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 94%;">
+                                94%
                             </div>
                         </div>
-                        <h4>Administered Medications</h4>
+                        <h4>Medications Administered</h4>
                         <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
-                                40%
+                            <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 43%;">
+                                43%
                             </div>
                         </div>
                     </div>
@@ -109,26 +110,26 @@
                         <div class="panel-body">
                             <div class="col-md-3">
                                 <div class="well dash-box">
-                                    <h2><span class="glyphicon glyphicon-user" aria-hidden="true"></span> 203</h2>
-                                    <h4>Users</h4>
+                                    <h2><i class="fa fa-user" aria-hidden="true"></i>203</h2>
+                                    <h4>Patients</h4>
                                 </div>
                             </div>
                             <div class="col-md-3">
                                 <div class="well dash-box">
-                                    <h2><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> 12</h2>
-                                    <h4>Pages</h4>
+                                    <h2><i class="fa fa-user-md" aria-hidden="true"></i>24</h2>
+                                    <h4>Staff</h4>
                                 </div>
                             </div>
                             <div class="col-md-3">
                                 <div class="well dash-box">
-                                    <h2><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> 33</h2>
-                                    <h4>Posts</h4>
+                                    <h2><i class="fa fa-heartbeat" aria-hidden="true"></i>96%</h2>
+                                    <h4>Health Rating</h4>
                                 </div>
                             </div>
                             <div class="col-md-3">
                                 <div class="well dash-box">
-                                    <h2><span class="glyphicon glyphicon-stats" aria-hidden="true"></span> 12,334</h2>
-                                    <h4>Visitors</h4>
+                                    <h2><i class="fa fa-medkit" aria-hidden="true"></i> 4</h2>
+                                    <h4>Attention Needed</h4>
                                 </div>
                             </div>
                         </div>
@@ -137,39 +138,57 @@
                     <!-- Medication Administration -->
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <h3 class="panel-title">Medication Administration</h3>
+                            <h3 class="panel-title">Priority Patients</h3>
                         </div>
                         <div class="panel-body">
                             <table class="table table-striped table-hover">
                                 <tr>
                                     <th>Name</th>
-                                    <th>Room</th>
-                                    <th>Time</th>
+                                    <th>Gender</th>
+                                    <th>Heartbeats/Min</th>
+                                    <th>Body Temp(F)</th>
+                                    <th>Steps Walked</th>
+                                    <th>Alert</th>
                                 </tr>
                                 <tr>
                                     <td>Jill Smith</td>
-                                    <td>F-4b</td>
-                                    <td>06:42 PM</td>
+                                    <td>F</td>
+                                    <td>78</td>
+                                    <td>97.1</td>
+                                    <td>468</td>
+                                    <td>None</td>
                                 </tr>
                                 <tr>
                                     <td>Eve Jackson</td>
-                                    <td>C-2a</td>
-                                    <td>06:41 PM</td>
+                                    <td>F</td>
+                                    <td>64</td>
+                                    <td>98.6</td>
+                                    <td>1264</td>
+                                    <td>None</td>
                                 </tr>
                                 <tr>
-                                    <td>John Doe</td>
-                                    <td>F-7a</td>
-                                    <td>06:37 PM</td>
+                                    <td>John Bravo</td>
+                                    <td>M</td>
+                                    <td>81</td>
+                                    <td>98.9</td>
+                                    <td>4345</td>
+                                    <td>Moderate</td>
                                 </tr>
                                 <tr>
                                     <td>Stephanie Landon</td>
-                                    <td>D-5b</td>
-                                    <td>06:35 PM</td>
+                                    <td>F</td>
+                                    <td>71</td>
+                                    <td>97.7</td>
+                                    <td>635</td>
+                                    <td>None</td>
                                 </tr>
                                 <tr>
-                                    <td>Mike Johnson</td>
-                                    <td>G-12a</td>
-                                    <td>05:52 PM</td>
+                                    <td>Frederick Tatum</td>
+                                    <td>M</td>
+                                    <td>68</td>
+                                    <td>98.2</td>
+                                    <td>984</td>
+                                    <td>None</td>
                                 </tr>
                             </table>
                         </div>
