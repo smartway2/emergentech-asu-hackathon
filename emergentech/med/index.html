@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="http://bootswatch.com/solar/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <div class="jumbotron">
+      <h1>Jill Smith</h1>
+    </div>
+    <div class="container-fluid">
+      <div class="col-md-5">
+        <div class="row">
+          <input type="text" name="newMed" placeholder="Drug Name">
+        </div>
+        <div class="row">
+          <input type="text" name="instruct" placeholder="Specific Instructions">
+        </div>
+        <div class="row">
+          <a id="3" data-toggle="modal" data-target="#myModal3">ha</a>
+          <button type="button" class="btn btn-success" name="newMed">Add Medication Memo</button>
+        </div>
+      </div>
+      <div class="col-md-7">
+        <div class="row">
+          <h3>Heart Health</h3>
+          <h1 id="heart"></h1>
+        </div>
+        <div class="row">
+          <h3>Steps Today</h3>
+          <h1 id="stepss"></h1>
+        </div>
+      </div>
+    </div>
+    <div id="myModal3" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Average heart Rate over last hour</h4>
+        </div>
+        <div id="g" class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="index.js" defer></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  </body>
+</html>

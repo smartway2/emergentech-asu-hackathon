@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <div class="container-fluid" style="background-size: cover; height: 100vh;">
+        <div class="row">
+          <div class="col-md-4">
+
+          </div>
+          <div class="col-md-4">
+        <div id="info"></div>
+        <div class="right">
+          <button id="start_button" onclick="startButton(event)">START/STOP</button>
+          <button id="submit_response">Submit Response</button>
+        </div>
+        <div id="results">
+          <span id="final_span" class="final"></span>
+          <span id="interim_span" class="interim"></span>
+          <p>
+        </div>
+        <div class="center">
+          <p>
+          <div id="div_language">
+            <select id="select_language" onchange="updateCountry()"></select>
+            &nbsp;&nbsp;
+            <select id="select_dialect"></select>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row cap">
+      <cap></cap>
+    </div>
+    <div class="row buffer">
+    </div>
+    <div class="row">
+      <div class="col-md-3">
+        <h3>Contact Medical Personnel</h3>
+      </div>
+      <div class="col-md-6">
+        <div class="eq">
+          <div class="equalizer">
+             <span></span>
+             <span></span>
+             <span></span>
+             <span></span>
+             <span></span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <h3>Contact Family</h3>
+      </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2">
+        </div>
+        <div class="col-md-4">
+          <a id="hr" data-toggle="modal" data-target="#myModal">
+            <h3>Heart Rate</h3>
+            <h1 id="HeartRate"></h1>
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a id="sr" data-toggle="modal" data-target="#myModal2">
+            <h3>Steps Today</h3>
+            <h1 id="steps"></h1>
+          </a>
+        </div>
+      </div>
+      <div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Average heart Rate over last hour</h4>
+        </div>
+        <div id="hg" class="modal-body">
+          <div id="chartcontainer" style="margin-left: 13vw;">Prediction Graph</div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div id="myModal2" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+  <!-- Modal content-->
+  <div class="modal-content">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal">&times;</button>
+      <h4 class="modal-title">Average steps over last day</h4>
+    </div>
+    <div id="sg" class="modal-body">
+      <div id="chartcontainer2" style="margin-left: 13vw;">Prediction Graph</div>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    </div>
+  </div>
+
+</div>
+</div>
+    <div class="row mystery">
+    </div>
+    <script type="text/javascript" src="jscharts.js"></script>
+    <script src='https://code.responsivevoice.org/responsivevoice.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="index.js" defer></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  </body>
+</html>
